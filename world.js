@@ -1,5 +1,5 @@
-var width = 960,
-    height = 960;
+var width = 800,
+    height = 800;
 
 var projection = d3.geo.orthographic()
                        .scale(350)
@@ -14,15 +14,15 @@ var svg = d3.select("body").append("svg").attr("width", width).attr("height", he
 
 var names = {};
 
-svg.append("defs").append("path")
+svg.append("path")
    .datum({type: "Sphere"})
    .attr("id", "globe")
    .attr("d", path);
 
-svg.append("path")
-   .datum(graticule)
-   .attr("class", "graticule")
-   .attr("d", path);
+// svg.append("path")
+//    .datum(graticule)
+//    .attr("class", "graticule")
+//    .attr("d", path);
 
 queue()
 .defer(d3.json, "smallerworld.json")

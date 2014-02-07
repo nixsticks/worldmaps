@@ -12,7 +12,7 @@ var graticule = d3.geo.graticule();
 
 var svg = d3.select("body").append("svg").attr("width", width).attr("height", height);
 
-svg.append("defs").append("path")
+svg.append("path")
    .datum({type: "Sphere"})
    .attr("id", "sphere")
    .attr("d", path);

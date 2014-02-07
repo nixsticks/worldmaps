@@ -19,12 +19,12 @@ body {
   stroke-opacity: .5;
 }
 
-#globe {
-  fill: blue;
+path#globe {
+  fill: lightskyblue;
 }
 
 .land {
-  fill: gray;
+  fill: saddlebrown;
 }
 
 .boundary {
@@ -38,7 +38,7 @@ body {
 }
 
 .active {
-  fill: #036564;
+  fill: forestgreen;
 }
 
 text {
