@@ -12,10 +12,6 @@ var graticule = d3.geo.graticule();
 
 var svg = d3.select("body").append("svg").attr("width", width).attr("height", height);
 
-var horizontal = d3.scale.linear().domain([0,width]).range([-180, 180]);
-
-var vertical = d3.scale.linear().domain([0,height]).range([90, -90]);
-
 svg.append("defs").append("path")
    .datum({type: "Sphere"})
    .attr("id", "sphere")
